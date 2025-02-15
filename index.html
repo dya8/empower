@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+         body {
+            background:linear-gradient(135deg, #f7e6a8de, #f7e6a8de);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            font-family: 'Arial', sans-serif;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .hero-section {
+            background: url('https://source.unsplash.com/1600x900/?business,team') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #100404;
+            text-align: center;
+        }
+        .team-member {
+            text-align: center;
+            padding: 20px;
+        }
+        .footer {
+            background: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .navbar {
+            background:#c0b89f !important;
+            
+        }
+        .btn-custom {
+            background: linear-gradient(45deg, hwb(47 44% 8% / 0.871), #f7e6a8de);
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn-custom:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn-warning {
+            transition: 0.3s;
+        }
+        .btn-warning:hover {
+            background: #ffcc00;
+            color: #000;
+        }
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 70vh;
+            }
+        }
+        .footer a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer a:hover {
+    transform: scale(1.2);
+    color: #ffcc00 !important;
+}
+
+        .social-icons a {
+            color: white;
+            font-size: 20px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+      
+        .team-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Ensures perfect circle */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="I-removebg-preview.png" alt="Aetherian Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                  
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                  
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <header class="hero-section" id="home">
+        <div>
+            <h1>Rising with every Challenges!</h1>
+         
+            <a href="#about" class="btn btn-custom">Explore More</a>
+        </div>
+    </header>
+
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">About Us</h2>
+            <p class="text-center">
+                At <strong>Aetherian</strong>, we believe in rising above every challenge.  
+                Our journey is defined by perseverance, progress, and the determination to push forward each day.  
+                <br>
+                With every session, we break barriers, overcome hurdles, and achieve new milestones.  
+                <br>
+                Our team thrives on resilience, turning obstacles into stepping stones and challenges into victories.  
+                Every point we score reflects our dedication, teamwork, and relentless pursuit of excellence.  
+                <br><br>
+                <strong>Aetherian</strong> isn’t just a name—it’s a mindset, a commitment to continuous growth, and a gateway to success.
+            </p>
+        </div>
+    </section>
+    
+
+    <section id="team" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Meet Our Team</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="team-member">
+                        <img src="kARjpg.jpg" class="team-img" alt="">
+                        <h4>Kartik P C</h4>
+                        <p>Captain</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-member">
+                        <img src="d.jpg" class="team-img" alt="">
+                        <h4>Diya K Dileep</h4>
+                        <p>Vice Captain</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="team-member">
+                        <img src="MEG.jpg" class="team-img" alt="">
+                        <h4>Megha Shaji</h4>
+                        <p>Secretary</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="team-member">
+                        <img src="GSOU.jpg" class="team-img" alt="">
+                        <h4>Gautham Santhosh</h4>
+                        <p>Treasurer</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="team-member">
+                        <img src="dSION.jpg" class="team-img" alt="">
+                        <h4>Diyon Siju</h4>
+                        <p>Project Manager</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="team-member">
+                        <img src="IRIIN.jpg" class="team-img" alt="">
+                        <h4>Irine Thersa</h4>
+                        <p>Design Head</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="team-member">
+                        <img src="KEVIN.jpg" class="team-img" alt="">
+                        <h4>Kevin Mathew Jacob</h4>
+                        <p>Tech Head</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="team-member">
+                        <img src="male-avatar-placeholder.png" class="team-img" alt="">
+                        <h4>Erin Anto</h4>
+                        <p>Content Head</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer class="footer">
+        <div class="container">
+            <p>Contact us at:</p>
+            <div>
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</body>
+</html>
