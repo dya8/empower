@@ -31,6 +31,7 @@
             justify-content: center;
             color: #100404;
             text-align: center;
+            flex-direction: column; /* Ensures vertical stacking */
         }
         .team-member {
             text-align: center;
@@ -68,8 +69,22 @@
         @media (max-width: 768px) {
             .hero-section {
                 height: 70vh;
+                padding: 20px;
             }
+            .logo {
+        max-width: 150px; /* Adjust logo size for smaller screens */
+    }
         }
+        @media (max-width: 480px) {
+    .logo {
+        max-width: 120px; /* Smaller size for very small screens */
+    }
+}
+        .logo {
+    max-width: 200px; /* Ensures responsiveness */
+    height: auto;
+    margin-bottom: 15px; /* Adds spacing below the logo */
+}
         .footer a {
     transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -121,11 +136,12 @@
     
     <header class="hero-section" id="home">
         <div>
-            <h1>Rising with every Challenges!</h1>
-         
+            <img src="I-removebg-preview.png" alt="Logo" class="logo">
+            <h1>Rising with every Challenge!</h1>
             <a href="#about" class="btn btn-custom">Explore More</a>
         </div>
     </header>
+    
 
     <section id="about" class="py-5 bg-light">
         <div class="container">
@@ -202,7 +218,7 @@
                 
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
                     <div class="team-member">
-                        <img src="male-avatar-placeholder.png" class="team-img" alt="">
+                        <img src="erin.jpg" class="team-img" alt="">
                         <h4>Erin Anto</h4>
                         <p>Content Head</p>
                     </div>
@@ -211,18 +227,32 @@
         </div>
     </section>
 
-    
-
     <footer class="footer">
         <div class="container">
             <p>Contact us at:</p>
             <div>
-                <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61572991930206" class="text-white me-3" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com" class="text-white me-3" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/aetherian-warriors-35b889350/" class="text-white me-3" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/aetherian_warriors/?__pwa=1#" class="text-white me-3" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.reddit.com/user/AetherianWarriors/" class="text-white me-3" target="_blank">
+                    <i class="fab fa-reddit"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCiznvlxlI3ECTooWkXWk_Vw" class="text-white me-3" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
             </div>
         </div>
     </footer>
+    
 
     <script>
         AOS.init();
